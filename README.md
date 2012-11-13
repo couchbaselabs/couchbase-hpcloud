@@ -95,10 +95,11 @@ For example...
 And follow the steps in the web-based setup screens to complete your
 Couchbase Server configuration.
 
-If you configured a "default" bucket, you can use memcachetest to put
-a test workload on your Couchbase Server, using...
+If you configured a "default" bucket (recommended, especially for
+demos), you can use memcachetest to put a test workload on your
+Couchbase Server, using...
 
-   $ /opt/couchbase/bin/memcachetest -l
+    $ /opt/couchbase/bin/memcachetest -l
 
 There are lots of useful monitoring graphs in the "MONITOR" section of
 the Couchbase Server web U/I.  Be sure to check them out.
