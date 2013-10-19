@@ -60,24 +60,35 @@ In your SSH session, use...
 
 Here's an example...
 
-    [root@server-1352770774-az-1-region-a-geo-1 ~]# wget http://packages.couchbase.com/releases/2.2.0/couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm
-    --2013-09-13 01:43:41--  http://packages.couchbase.com/releases/2.2.0/couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm
-    Resolving packages.couchbase.com... 207.171.185.200
-    Connecting to packages.couchbase.com|207.171.185.200|:80... connected.
+    [root@test0 tmp]# wget http://packages.couchbase.com/releases/2.2.0/couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm
+    --2013-10-19 01:38:06--  http://packages.couchbase.com/releases/2.2.0/couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm
+    Resolving packages.couchbase.com... 176.32.100.65
+    Connecting to packages.couchbase.com|176.32.100.65|:80... connected.
     HTTP request sent, awaiting response... 200 OK
-    Length: 89678520 (86M) [application/octet-stream]
+    Length: 130662856 (125M) [application/x-redhat-package-manager]
     Saving to: `couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm'
-    100%[======================================>] 89,678,520  18.8M/s   in 9.6s
-    2013-09-13 01:43:51 (8.95 MB/s) - `couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm' saved [89678520/89678520]
-
-    [root@server-1352770774-az-1-region-a-geo-1 ~]# rpm -i couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm
+    
+    100%[============================================================================================================================>] 130,662,856 3.32M/s   in 38s
+    
+    2013-10-19 01:38:44 (3.32 MB/s) - `couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm' saved [130662856/130662856]
+    
+    [root@test0 tmp]# rpm -i couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm
+    Minimum RAM required  : 4 GB
+    System RAM configured : 8181668 kB
+    
+    Minimum number of processors required : 4 cores
+    Number of processors on the system    : 4 cores
+    
     Starting couchbase-server[  OK  ]
+    
     You have successfully installed Couchbase Server.
-    Please browse to http://server-1352770774-az-1-region-a-geo-1:8091/ to configure your server.
+    Please browse to http://test0:8091/ to configure your server.
     Please refer to http://couchbase.com for additional resources.
+    
     Please note that you have to update your firewall configuration to
     allow connections to the following ports: 11211, 11210, 11209, 4369,
-    8091 and from 21100 to 21299.
+    8091, 8092 and from 21100 to 21299.
+    
     By using this software you agree to the End User License Agreement.
     See /opt/couchbase/LICENSE.txt.
 
