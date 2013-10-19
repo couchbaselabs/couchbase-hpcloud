@@ -51,26 +51,26 @@ You can get the latest Couchbase Server software packages from...
 
 For example, we'll use...
 
-    http://packages.couchbase.com/releases/1.8.1/couchbase-server-community_x86_64_1.8.1.rpm
+    http://packages.couchbase.com/releases/2.2.0/couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm
 
 In your SSH session, use...
 
-    $ wget http://packages.couchbase.com/releases/1.8.1/couchbase-server-community_x86_64_1.8.1.rpm
-    $ rpm -i couchbase-server-community_x86_64_1.8.1.rpm
+    $ wget http://packages.couchbase.com/releases/2.2.0/couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm
+    $ rpm -i couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm
 
 Here's an example...
 
-    [root@server-1352770774-az-1-region-a-geo-1 ~]# wget http://packages.couchbase.com/releases/1.8.1/couchbase-server-community_x86_64_1.8.1.rpm
-    --2012-11-13 01:43:41--  http://packages.couchbase.com/releases/1.8.1/couchbase-server-community_x86_64_1.8.1.rpm
+    [root@server-1352770774-az-1-region-a-geo-1 ~]# wget http://packages.couchbase.com/releases/2.2.0/couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm
+    --2013-09-13 01:43:41--  http://packages.couchbase.com/releases/2.2.0/couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm
     Resolving packages.couchbase.com... 207.171.185.200
     Connecting to packages.couchbase.com|207.171.185.200|:80... connected.
     HTTP request sent, awaiting response... 200 OK
     Length: 89678520 (86M) [application/octet-stream]
-    Saving to: `couchbase-server-community_x86_64_1.8.1.rpm'
+    Saving to: `couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm'
     100%[======================================>] 89,678,520  18.8M/s   in 9.6s
-    2012-11-13 01:43:51 (8.95 MB/s) - `couchbase-server-community_x86_64_1.8.1.rpm' saved [89678520/89678520]
+    2013-09-13 01:43:51 (8.95 MB/s) - `couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm' saved [89678520/89678520]
 
-    [root@server-1352770774-az-1-region-a-geo-1 ~]# rpm -i couchbase-server-community_x86_64_1.8.1.rpm
+    [root@server-1352770774-az-1-region-a-geo-1 ~]# rpm -i couchbase-server-enterprise_2.2.0_x86_64_openssl098.rpm
     Starting couchbase-server[  OK  ]
     You have successfully installed Couchbase Server.
     Please browse to http://server-1352770774-az-1-region-a-geo-1:8091/ to configure your server.
@@ -101,5 +101,5 @@ Couchbase Server, using...
 
     $ /opt/couchbase/bin/memcachetest -l
 
-There are lots of useful monitoring graphs in the "MONITOR" section of
-the Couchbase Server web U/I.  Be sure to check them out.
+There are lots of useful monitoring graphs in the Couchbase Server web
+U/I.  Be sure to check them out.
